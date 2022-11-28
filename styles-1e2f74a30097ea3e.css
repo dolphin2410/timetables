@@ -193,6 +193,36 @@ tr:not(:last-child) > td:hover {
     margin-right: 50px;
 }
 
+@media screen and (max-width: 1200px) {
+    .incontainer {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .incontainer {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .incontainer {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .incontainer {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .incontainer {
+        width: 90vw;
+    }
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidebar {
