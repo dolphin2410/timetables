@@ -207,7 +207,7 @@ impl Component for Model {
                         <div class="container-horizontal-left"><h3>{"학교검색"}</h3></div>
                         <div class={classes!("search-area", self.class.clone())}>
                             <div class="input_group">
-                            <input id="search_input" type="text" onclick={click_callback} onkeyup={input_callback} />
+                            <input id="search_input" type="text" placeholder="OO중학교 + 엔터" onclick={click_callback} onkeyup={input_callback} />
                             // <button id="search_button" type="button">
                                 //     <i class="fa-solid fa-magnifying-glass"></i>
                                 // </button>
