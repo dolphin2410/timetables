@@ -43,6 +43,10 @@ body {
     flex-direction: column;
 }
 
+.head {
+    margin-bottom: 40px;
+}
+
 .container-horizontal-left {
     width: 100%;
     display: flex;
@@ -203,6 +207,10 @@ tr:not(:last-child) > td:hover {
     .incontainer {
         width: 60vw;
     }
+}
+
+.mini {
+    font-size: 0.5em;
 }
 
 @media screen and (max-width: 700px) {

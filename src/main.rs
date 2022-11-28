@@ -106,7 +106,13 @@ impl Component for Model {
                 true
             },
             Msg::AddSchools { schools } => {
-                self.school = schools;
+                let data_len = schools.len();
+                let max_len = 5;
+                self.school = if data_len > max_len {
+                    schools[0..max_len].to_vec()
+                } else {
+                    schools
+                };
                 true
             },
             Msg::SetInput { input } => {
@@ -204,6 +210,7 @@ impl Component for Model {
             Stage::Search => html! {
                 <div class="container">
                     <div class="incontainer flex">
+                        <div class="head"><h2>{ "TimeTables" }</h2></div>
                         <div class="container-horizontal-left"><h3>{"학교검색"}</h3></div>
                         <div class={classes!("search-area", self.class.clone())}>
                             <div class="input_group">
@@ -224,6 +231,7 @@ impl Component for Model {
                                 }
                             </div>
                         </div>
+                        <div class="mini">{"Powered By 컴시간학생"}</div>
                     </div>
                 </div>
             },
