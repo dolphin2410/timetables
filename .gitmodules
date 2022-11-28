@@ -1,0 +1,3 @@
+[submodule "comcigan-rs"]
+	path = comcigan-rs
+	url = https://github.com/dolphin2410/comcigan-rs
