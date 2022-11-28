@@ -757,7 +757,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('better-comcigan-b849a598edc9934e_bg.wasm', import.meta.url);
+        input = new URL('better-comcigan-f75d37f1ed6e08eb_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
